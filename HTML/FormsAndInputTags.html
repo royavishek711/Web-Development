@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2><strong>forms</strong></h2>
+    <form action="backend.php">
+        <label for="Name">Name</label>
+        <div>
+            <input type="text" name="MyName" id="Name">
+        </div>
+        <br>
+        <label for="Roll">Roll</label>
+        <div>
+            <input type="number" name="MyRoll" id="Roll">
+        </div>
+        <br>
+        <div>
+            Date of Birth: <input type="date" name="MyDOB" id="">
+        </div>
+        <br>
+        <div>
+            Gender: Male:<input type="radio" name="MyGender" id=""> Female:<input type="radio" name="MyGender" id=""> Other:<input type="radio" name="MyGender" id="">
+        </div>
+        <br>
+        <label for="ready">Are you ready: </label>
+        <div>
+            <input type="checkbox" name="Ready" id="ready" unchecked>
+        </div>
+        <br>
+        <div>
+            Tell me about yourself: <br><textarea name="text" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Email id: <input type="email" name="MyEmail" id="">
+        </div>
+        <br>
+        <div>
+            Enter password: <input type="password" name="MyPassword" id="">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+                <select name="MyCar" id="car">
+                    <option value="mercedes">mercedes</option>
+                    <option value="audi">audi</option>
+                    <option value="tata" selected>tata</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Submit">
+        </div>
+        <br>
+        <div>
+            Image: <br><input type="image" src="pubg.jpg" alt="Error" width="200" height="250">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset/Clear">
+        </div>
+        <br>
+    </form>
+</body>
+</html>
