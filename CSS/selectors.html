@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector - The element selector selects the target element based on the specific type. */
+        div{
+            color: red;
+        }
+
+        /* Universal Selector -Universal selector represented by "*" targets all the HTML elements on the page. */
+        * {
+            color: blue;
+        }
+
+        /* ID Selector - The ID selector targets the elements based on the specific ID. It is written with the hash “#” character followed by the ID name in the style sheet. */
+        #elem{
+            color: blueviolet;
+        }
+
+        /* Class Selector - The class selector does the same job as the id selector, a class selector helps group various types of elements. */
+        .paragraph{
+            color: forestgreen;
+        }
+
+        div > p {
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors in CSS masterclass</h1>
+    <div>
+        Hey this is Element selctor
+    </div>
+    <div id="elem">
+        this is id selector
+    </div>
+    <p class="paragraph">This p tag class selector</p>
+    <div>
+        <p>this is child</p>
+        <p>this is not</p>
+    </div>
+</body>
+</html>
