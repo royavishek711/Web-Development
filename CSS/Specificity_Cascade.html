@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        p{
+            color: aqua;
+        }
+        p.cred{
+            color: red;
+        }
+        article{
+            color:coral !important;
+        }
+        .cblue{
+            color: blue;
+        }
+        .cpink{
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Specificity and Cascade</h1>
+    <p style="color: chartreuse;" class="cred cblue cpink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque.</p>
+    <p class="cred cblue cpink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut magnam tempore quam est?</p>
+    <p class="cblue cpink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ut magnam tempore quam est?</p>
+    <article style="color: blueviolet;" class="cred cblue cpink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque soluta dolorum totam eaque iusto dignissimos quos illum commodi maiores.</article>
+    <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+    These are priority wise from highest to lowest -->
+    <!-- Important tag have the highest priority above all -->
+</body>
+</html>
