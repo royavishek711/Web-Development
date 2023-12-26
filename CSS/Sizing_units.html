@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sizing Units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid red;
+            /*width: 1528px;*/ /* This is not a good practice */
+            width: 60vw;
+            height: 20vh;
+            margin: 10px auto; /* By this you can center a div*/
+            background-color: aqua;
+        }
+        .container{
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 60vw;
+            height: 40vh;
+            margin: 20px auto;
+            background-color:darksalmon;
+            font-size: 20px; 
+            
+        }
+        .container > div{
+            font-size: .6em;
+            border: 2px solid blue;
+            width: 50%;
+            height: 50%;
+        }
+        .container > div > div{
+            
+            border: 2px solid black;
+            width: 70%;
+            
+        }
+        .newcontainer{
+            border: 2px solid purple;
+            box-sizing: border-box;
+            width: 60vw;
+            margin: auto;
+            background-color: darkorange;
+            color: darkgreen;
+            height: 20vmin;
+            width: 60vw;
+            font-size: 25px;
+        }
+    </style> 
 </head>
 <body>
-    
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur!
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, qui! Voluptatibus, dolor?
+            </div>
+        </div>
+    </div>
+    <div class="newcontainer">
+        This is new container
+    </div>
 </body>
 </html>
