@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        /*root is like global variables */
+        :root{
+            --color: rgb(223, 135, 237);
+            --darkcol: black;
+            --seccolor: rgb(224, 181, 103);
+            --defop: 0.5;
+            --defpad: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            border: 3px solid var(--darkcol);
+        }
+
+        ul li:first-child{
+            --seccolor: blue;/*local variable*/
+            background-color: var(--seccolor, purple);
+        }
+        .sample{
+            opacity: var(--defop);
+            --seccolor: brown;
+            background-color: var(--seccolorr, aqua);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="sample">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iure quidem saepe quae voluptatem, aliquid ullam nostrum molestiae exercitationem maxime aut! Similique fugiat laboriosam architecto inventore aliquam quis quasi cupiditate expedita possimus fugit. Eos itaque delectus laboriosam exercitationem molestias quis, error dolores officia repudiandae, in id. Sint amet quo, tempora expedita laboriosam voluptatum quibusdam voluptate.
+    </div>
+</body>
+</html>
