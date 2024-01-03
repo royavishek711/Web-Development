@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .sample{
+            border: 3px solid black;
+            display: flow-root;
+        }
+
+        img{
+            float:right;
+        }
+
+        .sam{
+            border: 3px solid red;
+        }
+
+        .sam:nth-child(3){
+            color: rgb(68, 51, 223);
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="sample">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="" width="300px">
+        <div class="sam">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae magnam! Laboriosam tenetur beatae temporibus deserunt dignissimos impedit quidem eaque?</p>
+        </div>
+        <div class="sam">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae culpa vitae cum, ratione debitis temporibus aperiam explicabo odit autem. Molestias neque iusto deleniti reiciendis?</div>
+        <div class="sam">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, repudiandae!</div>
+    </div>
+</body>
+</html>
