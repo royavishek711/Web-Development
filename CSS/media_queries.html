@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in CSS</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /*Media queries used to make responsive websites */
+        @media screen and (orientation: landscape) {
+            body{
+                border: 10px solid black;
+            }
+        }
+        @media only screen and (max-width: 568px) {
+            body{
+                background-color: aqua;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 500px;
+            height: 400px;
+            margin: 2px;
+            padding: 2px;
+            background-color: burlywood;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hey I have red body
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
