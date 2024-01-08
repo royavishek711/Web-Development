@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in CSS</title>
+    <style>
+        .boss{
+            border: 2px solid black;
+            display: grid;
+            width: 90vw;
+            height: 80vh;
+            /*grid-template-columns: 50px 50px 50px;
+            grid-template-areas: "nav nav nav"
+                                "main article article"
+                                "footer footer footer";
+            gap: 30px;
+            grid-template-rows: 50px 50px 50px 50px;*/
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 30px;
+            justify-items: flex-start;
+            align-items: flex-start;
+        }
+        .client{
+            border: 1px solid red;
+            height: 30px;
+            width: 30px;
+        }
+        .item-1{
+            /*grid-row: 2/2;
+            grid-column: 2/2;
+            grid-area: nav;*/
+            align-self: end;
+            justify-self: end;
+            background-color: aqua;
+        }
+        /*.item-2{
+            /*grid-row: 1/2;
+            grid-column: 1/2;
+            grid-area: main;
+            background-color:brown;
+        }
+        .item-3{
+            grid-area: article;
+            background-color: chartreuse;
+        }
+        .item-4{
+            grid-area: footer;
+            background-color: crimson;
+        }
+        .item-5{
+            /*grid-area: nav;
+
+        }*/
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div class="client item-1">1</div>
+        <div class="client item-2">2</div>
+        <div class="client item-3">3</div>
+        <div class="client item-4">4</div>
+        <div class="client item-5">5</div>
+        <div class="client item-7">7</div>
+        <div class="client">8</div>
+        <!-- <div class="client item-6">6</div>
+        <div class="client">9</div>
+        <div class="client">10</div>
+        <div class="client">11</div>
+        <div class="client">12</div>
+        <div class="client">13</div>
+        <div class="client">14</div> -->
+    </div>
+</body>
+</html>
