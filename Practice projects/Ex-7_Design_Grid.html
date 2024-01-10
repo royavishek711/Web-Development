@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the grid ex-7</title>
+    <style>
+        
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+            font-size: small;
+        }
+        .right ul{
+            display: flex;
+            gap: 15px;
+        }
+        .right ul li{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 0px 5px;
+            cursor: auto;
+        }
+        .text{
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            height: 500px;
+        }
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+            margin: 63px;
+
+        }
+        .first .bold{
+            font-size: 40px;
+            font-family: "Segoe UI";
+            
+        }
+        .dow{
+            font-size: 19px;
+            width: 60vw;
+            text-align: center;
+        }
+        .first div .one{
+            background-color: rgb(22, 134, 174);
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 14px 14px;
+            border: none;
+            font-size: 10px;
+        } 
+        .first .bold img{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ultra.jpeg" alt="" width="150px">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Pricing</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Resources</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>About Us</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="" width="20px">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span class="bold">Download <b>UltraEdit</b> for Windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" width="90px"></span>
+            <div class="dow">
+                
+                    Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+                
+            </div>
+            <div>
+                <button class="one">
+                    <b>DOWNLOAD MAC OR LINUX VERSION</b> 
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
