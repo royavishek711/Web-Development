@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-8</title>
+    <style>
+        .boss{
+            background-color: blue;
+            height: 70vh;
+            width: 60vw;
+            position: relative;
+        }
+        .ball{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            background-color: yellow;
+            border-radius: 70px;
+            animation: bounce1 4s linear infinite, bounce2 1s ease-out infinite alternate;
+        }
+        @keyframes bounce1{
+            from {
+                left: 0%;
+            }
+            to {
+                left: 95%;
+            }
+        }
+
+        @keyframes bounce2{
+           from {
+            bottom: 0%;
+           }
+           to{
+            bottom: 95%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div class="ball">
+
+        </div>
+    </div>  
+</body>
+</html>
