@@ -1,10 +1,52 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-div .bgimg{
+.main{
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 80vh;
     width: 100%;
+    opacity: 0.4;
+    background-color: black;
+}
+
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+nav img{
+    color: red;
+    width: 110px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
     height: 100%;
-    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
 }
