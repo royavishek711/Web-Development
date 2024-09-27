@@ -63,19 +63,19 @@ nav button {
     padding: 0 30px;
 }
 
-.hero> :nth-child(1){
+.hero > :nth-child(1){
     font-weight: bolder;
     font-size: 48px;
     text-align: center;
 }
 
-.hero> :nth-child(2) {
+.hero > :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
-.hero> :nth-child(3) {
+.hero > :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -125,4 +125,46 @@ nav button {
     font-size: 12px;
     border-radius: 5px; 
     border: 1px rgba(23, 23, 23, 0.5);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    max-width: 70vw;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 545px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 545px;
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+    /* font-weight: bolder; */
 }
