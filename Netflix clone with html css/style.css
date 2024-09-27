@@ -1,52 +1,128 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.main{
+body{
+    background-color: black;
+}
+
+.main {
     background-image: url("assets/images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1400px, 100vw);
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 
-.main .box{
+.main .box {
     position: absolute;
     top: 0;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.7;
     background-color: black;
 }
 
-nav{
+nav {
     max-width: 60vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 62px;
     align-items: center;
 }
-nav img{
+
+nav img {
     color: red;
     width: 110px;
     position: relative;
     z-index: 10;
 }
 
-nav button{
+nav button {
     position: relative;
     z-index: 10;
 }
 
-.hero{
-    height: 100%;
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(55, 52, 52);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(245, 238, 238, 0.025);
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.sign{
+    background-color: red;
+    color: white;
+}
+
+.get-start{
+    background-color: red;
+    font-weight: 400;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main input{
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    padding: 7px 101px 8px 14px;
+    /* font-weight: 900; */
+    font-size: 12px;
+    border-radius: 5px; 
+    border: 1px rgba(23, 23, 23, 0.5);
 }
